@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  @apply bg-brand-bg text-brand-purple-light;
+  position: relative;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-brand-header;
+}
+
+a {
+  @apply text-brand-purple-light hover:text-brand-accent transition-colors;
+}
+
+button {
+  @apply bg-brand-purple text-brand-purple-light hover:bg-brand-accent transition-colors;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  p {
+    @apply text-base;
+  }
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Prevenir desbordamiento horizontal */
+.container {
+  max-width: 100%;
+}
+
+/* Mejorar la legibilidad en pantallas pequeñas */
+@media (max-width: 640px) {
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+/* Ajustar el espaciado en dispositivos móviles */
+@media (max-width: 640px) {
+  .py-20 {
+    @apply py-12;
+  }
+  .mb-12 {
+    @apply mb-8;
+  }
+}
