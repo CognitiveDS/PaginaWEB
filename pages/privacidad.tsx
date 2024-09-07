@@ -143,7 +143,7 @@ const PrivacyPage: React.FC = () => {
               Para ejercer tus derechos ARCO, deberás realizarlo de forma personal conforme a los siguientes puntos:
             </p>
             <p className="text-justify mb-4">
-              Presentar un escrito libre en Periférico Paseo de la República #2149, Camelinas, 58290 Morelia, Michoacán en un horario de atención de 09 a 11 hrs, o bien enviar tu escrito a la dirección de correo electrónico cognitiveds.ai@gmail.com con el asunto "Ejercicio de mis derechos ARCO". El escrito deberá contener, como mínimo, los siguientes puntos:
+              Presentar un escrito libre en Periférico Paseo de la República #2149, Camelinas, 58290 Morelia, Michoacán en un horario de atención de 09 a 11 hrs, o bien enviar tu escrito a la dirección de correo electrónico cognitiveds.ai@gmail.com con el asunto 'Ejercicio de mis derechos ARCO'. El escrito deberá contener, como mínimo, los siguientes puntos:
             </p>
             <ul className="list-disc list-inside space-y-1 mb-4">
               <li>Nombre completo del titular de los datos personales</li>
