@@ -1,14 +1,17 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import React, { ReactNode } from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
-const Layout: React.FC = ({ children }) => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-brand-purple-dark via-brand-purple to-brand-bg">
       <Header />
-      <main className="flex-grow">
-        {children}
-      </main>
+      {children}
+      <Footer />
     </div>
   );
 };
