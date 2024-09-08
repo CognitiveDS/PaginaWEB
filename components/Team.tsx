@@ -40,23 +40,42 @@ const Team: React.FC = () => {
 
 const teamMembers = [
   {
-    name: "Juan Pérez",
+    name: "Jorge Daniel Carreón Guzmán",
     role: "Director Ejecutivo",
     image: "/images/juan-perez.jpg",
-    bio: "Con más de 15 años de experiencia en IA y análisis de datos, Juan lidera nuestra visión estratégica."
+    bio: "Con más de 2 años de experiencia en IA y análisis de datos, Daniel lidera nuestra visión estratégica."
   },
   {
-    name: "María García",
-    role: "Directora de Tecnología",
+    name: "Rodrigo De La Torre Sánchez",
+    role: "Directora general CognitiveDS",
     image: "/images/maria-garcia.jpg",
-    bio: "María es pionera en el desarrollo de algoritmos de aprendizaje profundo y arquitecturas de IA escalables."
+    bio: "Con mas de un año de experiencia en IA."
   },
   {
-    name: "Carlos Rodríguez",
-    role: "Científico de Datos Principal",
+    name: "Alex Seis Espinoza",
+    role: "Desarrollador Principal",
     image: "/images/carlos-rodriguez.jpg",
     bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
-  }
+  },
+  {
+    name: "Alex Seis Espinoza",
+    role: "Desarrollador Principal",
+    image: "/images/carlos-rodriguez.jpg",
+    bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
+  },
+  {
+    name: "Alex Seis Espinoza",
+    role: "Desarrollador Principal",
+    image: "/images/carlos-rodriguez.jpg",
+    bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
+  },
+  {
+    name: "Alex Seis Espinoza",
+    role: "Desarrollador Principal",
+    image: "/images/carlos-rodriguez.jpg",
+    bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
+  },
+
 ];
 
 export default Team;
