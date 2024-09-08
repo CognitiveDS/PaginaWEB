@@ -41,39 +41,39 @@ const Team: React.FC = () => {
 const teamMembers = [
   {
     name: "Jorge Daniel Carreón Guzmán",
-    role: "Director Ejecutivo",
-    image: "/images/juan-perez.jpg",
+    role: "CEO y Fundador de CognitiveDS",
+    image: "/images/Daniel.png",
     bio: "Con más de 2 años de experiencia en IA y análisis de datos, Daniel lidera nuestra visión estratégica."
   },
   {
     name: "Rodrigo De La Torre Sánchez",
-    role: "Directora general CognitiveDS",
-    image: "/images/maria-garcia.jpg",
-    bio: "Con mas de un año de experiencia en IA."
+    role: "CEO & Director general CognitiveDS",
+    image: "/images/Rodrigo1.jpg",
+    bio: "Lidera la agencia con más de 1 año de experiencia."
   },
   {
     name: "Alex Seis Espinoza",
     role: "Desarrollador Principal",
-    image: "/images/carlos-rodriguez.jpg",
-    bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
+    image: "/images/Alex.jpeg",
+    bio: "Especialista en desarrollo de GPT's y experto en implementaciónes con IA."
   },
   {
-    name: "Alex Seis Espinoza",
-    role: "Desarrollador Principal",
-    image: "/images/carlos-rodriguez.jpg",
-    bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
+    name: "Rafael",
+    role: "Agente de ventas",
+    image: "/images/dollar.jpeg",
+    bio: "Nuestro agente de ventas experto en IA enfocado en el sector hotelero y restaurantero."
   },
   {
-    name: "Alex Seis Espinoza",
-    role: "Desarrollador Principal",
-    image: "/images/carlos-rodriguez.jpg",
-    bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
+    name: "Paulo Rapino",
+    role: "Agente de ventas",
+    image: "/images/PauloRapino.jpg",
+    bio: "Nuestro agente de ventas experto en IA enfocado en el sector de abogacia y bienes raíces."
   },
   {
-    name: "Alex Seis Espinoza",
-    role: "Desarrollador Principal",
+    name: "Alejandro",
+    role: "Abogado",
     image: "/images/carlos-rodriguez.jpg",
-    bio: "Especialista en big data y modelado predictivo, Carlos impulsa nuestras soluciones más innovadoras."
+    bio: "Nuestro Abogado experto en IA aplicada en el sector Jurídico."
   },
 
 ];

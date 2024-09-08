@@ -5,15 +5,15 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const testimonials = [
   {
-    name: "Ana López",
-    role: "CEO en Tech Solutions",
+    name: "Jorge Aremko SPA",
+    role: "Dueño Aremko SPA",
     image: "/images/ana-lopez.jpg",
     testimonial: "CognitiveDS transformó nuestra forma de analizar datos. Su equipo es excepcional."
   },
   {
-    name: "Pedro Ramírez",
-    role: "Director de Innovación en FinTech",
-    image: "/images/pedro-ramirez.jpg",
+    name: "Paulo Rapino",
+    role: "Dueño de Gestionista Italia",
+    image: "/images/Italia.png",
     testimonial: "Las soluciones de IA que nos proporcionaron han sido un cambio de juego para nuestro negocio."
   },
   {

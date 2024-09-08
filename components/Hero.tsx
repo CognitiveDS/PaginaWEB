@@ -10,12 +10,12 @@ const Hero: React.FC = () => {
 
   return (
     <Parallax
-      bgImage="/images/hero-background.jpg"
-      strength={500}
-      bgImageStyle={{opacity: '0.3'}}
+      bgImage="/images/Imagen2.webp"
+      strength={250}
+      bgImageStyle={{opacity: '0.4'}}
     >
-      <section ref={ref} id="inicio" className="py-20 md:py-32 overflow-hidden">
-        <div className="container mx-auto px-4">
+      <section ref={ref} id="inicio" className="py-20 md:py-80 overflow-hidden">
+        <div className="container mx-auto px-1">
           <div className="flex flex-col md:flex-row items-center">
             <motion.div 
               className="md:w-1/2 mb-8 md:mb-0"
@@ -47,10 +47,8 @@ const Hero: React.FC = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
+        
                 <AnimatedButton className="bg-brand-accent text-brand-bg px-6 py-2 rounded-full hover:bg-brand-purple-light hover:text-brand-purple-dark transition duration-300 shadow-lg">
-                  Comienza ahora
-                </AnimatedButton>
-                <AnimatedButton className="border-2 border-brand-accent text-brand-accent px-6 py-2 rounded-full hover:bg-brand-accent hover:text-brand-bg transition duration-300">
                   Agenda ahora
                 </AnimatedButton>
               </motion.div>
