@@ -8,6 +8,7 @@ import { Message } from './types';
 import { X } from 'lucide-react';
 import TypingIndicator from './TypingIndicator';
 
+
 interface ChatContainerProps {
   onClose: () => void;
 }
@@ -18,6 +19,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
   const [isTyping, setIsTyping] = useState<boolean>(false);
 
   const backendURL = 'https://db4f7477-b59e-4373-bda9-aac68018170b-00-37tcg6fe0aukn.spock.replit.dev'; // Asegúrate de que esta URL sea correcta
+
   const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'mi_API_key'; // Define NEXT_PUBLIC_API_KEY en tu entorno
 
   const handleSendMessage = async (messageContent: string) => {
@@ -71,6 +73,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
           'Ocurrió un error al procesar tu mensaje. Por favor, intenta de nuevo más tarde.',
       };
       setMessages((prev) => [...prev, errorMessage]);
+
     } finally {
       setIsTyping(false);
     }
@@ -99,6 +102,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
         xs:w-full xs:h-full xs:bottom-0 xs:right-0 xs:rounded-none
       "
     >
+
       {/* Botón de cerrar */}
       <button
         className="absolute top-2 right-2 text-gray-400 hover:text-gray-200"

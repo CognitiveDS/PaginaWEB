@@ -1,14 +1,17 @@
 // components/ai_agent/ChatMessages.tsx
 
+
 import React, { useEffect, useRef } from 'react';
 import MessageBubble from './MessageBubble';
 import TypingIndicator from './TypingIndicator';
+
 import { Message } from './types';
 
 interface ChatMessagesProps {
   messages: Message[];
   isTyping: boolean;
 }
+
 
 const ChatMessages: React.FC<ChatMessagesProps> = ({ messages, isTyping }) => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -29,3 +32,4 @@ const ChatMessages: React.FC<ChatMessagesProps> = ({ messages, isTyping }) => {
 };
 
 export default ChatMessages;
+

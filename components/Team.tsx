@@ -16,7 +16,7 @@ const Team: React.FC = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
+              <div className="relative w-40 h-60 mx-auto mb-4 overflow-hidden rounded-full">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -42,38 +42,23 @@ const teamMembers = [
   {
     name: "Jorge Daniel Carreón Guzmán",
     role: "CEO y Fundador de CognitiveDS",
-    image: "/images/Daniel.png",
+
+    image: "/images/Daniel1.png",
     bio: "Con más de 2 años de experiencia en IA y análisis de datos, Daniel lidera nuestra visión estratégica."
   },
   {
     name: "Rodrigo De La Torre Sánchez",
-    role: "CEO & Director general CognitiveDS",
-    image: "/images/Rodrigo1.jpg",
+
+    role: "CEO y Director general CognitiveDS",
+    image: "/images/Rod1.png",
     bio: "Lidera la agencia con más de 1 año de experiencia."
   },
   {
     name: "Alex Seis Espinoza",
     role: "Desarrollador Principal",
-    image: "/images/Alex.jpeg",
+
+    image: "/images/Alex.png",
     bio: "Especialista en desarrollo de GPT's y experto en implementaciónes con IA."
-  },
-  {
-    name: "Rafael",
-    role: "Agente de ventas",
-    image: "/images/dollar.jpeg",
-    bio: "Nuestro agente de ventas experto en IA enfocado en el sector hotelero y restaurantero."
-  },
-  {
-    name: "Paulo Rapino",
-    role: "Agente de ventas",
-    image: "/images/PauloRapino.jpg",
-    bio: "Nuestro agente de ventas experto en IA enfocado en el sector de abogacia y bienes raíces."
-  },
-  {
-    name: "Alejandro",
-    role: "Abogado",
-    image: "/images/carlos-rodriguez.jpg",
-    bio: "Nuestro Abogado experto en IA aplicada en el sector Jurídico."
   },
 
 ];

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
+
 interface ChatInputProps {
   onSendMessage: (message: string) => void;
 }
@@ -24,10 +25,12 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage }) => {
   };
 
   return (
+
     <div className="flex p-2 border-t border-gray-700">
       <input
         type="text"
         className="flex-1 p-2 bg-[#1a1a1a] text-white rounded-l-lg focus:outline-none"
+
         placeholder="Escribe un mensaje..."
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
@@ -39,6 +42,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage }) => {
       >
         Enviar
       </Button>
+
     </div>
   );
 };

@@ -1,12 +1,15 @@
 // components/ai_agent/ChatBubble.tsx
 
+
 import React, { useEffect, useState } from 'react';
+
 
 interface ChatBubbleProps {
   onClick: () => void;
 }
 
 const ChatBubble: React.FC<ChatBubbleProps> = ({ onClick }) => {
+
   const [isShining, setIsShining] = useState(true);
 
   useEffect(() => {
@@ -29,6 +32,7 @@ const ChatBubble: React.FC<ChatBubbleProps> = ({ onClick }) => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 animate-shine rounded-full"></div>
         )}
       </div>
+
     </button>
   );
 };

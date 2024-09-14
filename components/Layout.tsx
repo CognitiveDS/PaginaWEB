@@ -1,8 +1,10 @@
+
 // components/Layout.tsx
 
 import React, { ReactNode } from 'react';
 import Header from './Header';
 import ChatWidget from './ai_agent/ChatWidget'; // Importar el componente del chatbot
+
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,6 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header />
       {children}
       <ChatWidget /> {/* Añadir el componente del chatbot aquí */}
+
     </div>
   );
 };
