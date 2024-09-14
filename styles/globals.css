@@ -128,3 +128,9 @@ button {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .shine-effect {
+    animation: shine 2s ease-in-out forwards;
+  }
+}

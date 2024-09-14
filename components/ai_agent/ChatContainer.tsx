@@ -6,7 +6,7 @@ import ChatMessages from './ChatMessages';
 import ChatInput from './ChatInput';
 import { Message } from './types';
 import { X } from 'lucide-react';
-import { useToast } from '@/components/hooks/use-toast';
+import TypingIndicator from './TypingIndicator';
 
 interface ChatContainerProps {
   onClose: () => void;
@@ -17,9 +17,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
   const [threadID, setThreadID] = useState<string | null>(null);
   const [isTyping, setIsTyping] = useState<boolean>(false);
 
-  const { toast } = useToast();
-
-  const backendURL = 'https://levy-backend-cognitivedsai.replit.app'; // Asegúrate de que esta URL sea correcta
+  const backendURL = 'https://db4f7477-b59e-4373-bda9-aac68018170b-00-37tcg6fe0aukn.spock.replit.dev'; // Asegúrate de que esta URL sea correcta
   const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'mi_API_key'; // Define NEXT_PUBLIC_API_KEY en tu entorno
 
   const handleSendMessage = async (messageContent: string) => {
@@ -73,20 +71,34 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
           'Ocurrió un error al procesar tu mensaje. Por favor, intenta de nuevo más tarde.',
       };
       setMessages((prev) => [...prev, errorMessage]);
-
-      // Mostrar notificación de error
-      toast({
-        variant: 'destructive',
-        title: 'Error',
-        description: 'No se pudo enviar el mensaje.',
-      });
     } finally {
       setIsTyping(false);
     }
   };
 
   return (
-    <div className="fixed bottom-5 right-5 w-96 h-[600px] bg-[#212121] rounded-lg shadow-lg flex flex-col z-50">
+    <div
+      className="
+        fixed 
+        bottom-5 
+        right-5 
+        w-120 
+        h-[750px] 
+        bg-gradient-to-b from-[#212121] to-[#121212] 
+        rounded-lg 
+        shadow-xl 
+        flex 
+        flex-col 
+        z-50 
+        border 
+        border-[#121212] 
+        sm:w-96 sm:h-[600px]
+        md:w-96 md:h-[600px]
+        lg:w-[25rem] lg:h-[700px]
+        xl:w-[25rem] xl:h-[800px]
+        xs:w-full xs:h-full xs:bottom-0 xs:right-0 xs:rounded-none
+      "
+    >
       {/* Botón de cerrar */}
       <button
         className="absolute top-2 right-2 text-gray-400 hover:text-gray-200"
