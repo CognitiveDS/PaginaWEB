@@ -7,21 +7,17 @@ const testimonials = [
   {
     name: "Jorge Aremko SPA",
     role: "Dueño Aremko SPA",
-    image: "/images/ana-lopez.jpg",
+
+    image: "/images/LOGOAREMKO1.png",
     testimonial: "CognitiveDS transformó nuestra forma de analizar datos. Su equipo es excepcional."
   },
   {
-    name: "Paulo Rapino",
+    name: "Gestionista Italia",
     role: "Dueño de Gestionista Italia",
     image: "/images/Italia.png",
     testimonial: "Las soluciones de IA que nos proporcionaron han sido un cambio de juego para nuestro negocio."
   },
-  {
-    name: "Laura Fernández",
-    role: "Jefa de Proyectos en HealthCo",
-    image: "/images/laura-fernandez.jpg",
-    testimonial: "Increíble servicio y resultados. CognitiveDS realmente entiende nuestras necesidades."
-  }
+  
 ];
 
 const Testimonials: React.FC = () => {

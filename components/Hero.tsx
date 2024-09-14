@@ -1,5 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
+import React, { useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Parallax } from 'react-parallax';
 import AnimatedButton from './AnimatedButton';
@@ -7,6 +6,13 @@ import AnimatedButton from './AnimatedButton';
 const Hero: React.FC = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.3 });
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (isInView && videoRef.current) {
+      videoRef.current.play().catch(error => console.log("Autoplay was prevented:", error));
+    }
+  }, [isInView]);
 
   return (
     <Parallax
@@ -15,6 +21,7 @@ const Hero: React.FC = () => {
       bgImageStyle={{opacity: '0.4'}}
     >
       <section ref={ref} id="inicio" className="py-20 md:py-80 overflow-hidden">
+
         <div className="container mx-auto px-1">
           <div className="flex flex-col md:flex-row items-center">
             <motion.div 
@@ -59,17 +66,19 @@ const Hero: React.FC = () => {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="relative h-64 md:h-96 w-full">
-                <Image
-                  src="/images/Imagen2.webp"
-                  alt="Visualización de Datos"
-                  layout="fill"
-                  objectFit="cover"
-                  quality={100}
-                  placeholder="blur"
-                  blurDataURL="/images/Imagen2-blur.webp"
-                  className="rounded-lg shadow-2xl"
-                />
+              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+                <video
+                  ref={videoRef}
+                  className="w-full h-full object-cover rounded-lg shadow-2xl"
+                  loop
+                  muted
+                  playsInline
+                  autoPlay
+                  controls // Añadido temporalmente para depuración
+                >
+                  <source src="/images" type="video/mp4" />
+                  Tu navegador no soporta el tag de video.
+                </video>
               </div>
             </motion.div>
           </div>
