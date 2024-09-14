@@ -16,11 +16,11 @@ const Hero: React.FC = () => {
 
   return (
     <Parallax
-      bgImage="/images/Imagen2.webp"
+      bgImage="/images/Imagenfondo2.webp"
       strength={250}
       bgImageStyle={{opacity: '0.4'}}
     >
-      <section ref={ref} id="inicio" className="py-20 md:py-80 overflow-hidden">
+      <section ref={ref} id="inicio" className="py-20 md:py-40 overflow-hidden">
 
         <div className="container mx-auto px-1">
           <div className="flex flex-col md:flex-row items-center">
