@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
                   autoPlay
                   controls // Añadido temporalmente para depuración
                 >
-                
+                  <source src="/images" type="video/mp4" />
                   Tu navegador no soporta el tag de video.
                 </video>
               </div>
