@@ -18,7 +18,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
   const [threadID, setThreadID] = useState<string | null>(null);
   const [isTyping, setIsTyping] = useState<boolean>(false);
 
-  const backendURL = 'https://db4f7477-b59e-4373-bda9-aac68018170b-00-37tcg6fe0aukn.spock.replit.dev'; // Asegúrate de que esta URL sea correcta
+  const backendURL = 'https://levy-back.replit.app'; // Asegúrate de que esta URL sea correcta
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'mi_API_key'; // Define NEXT_PUBLIC_API_KEY en tu entorno
 
