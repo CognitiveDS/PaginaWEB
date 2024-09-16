@@ -8,7 +8,6 @@ import { Message } from './types';
 import { X } from 'lucide-react';
 import TypingIndicator from './TypingIndicator';
 
-
 interface ChatContainerProps {
   onClose: () => void;
 }
@@ -19,7 +18,6 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
   const [isTyping, setIsTyping] = useState<boolean>(false);
 
   const backendURL = 'https://levy-back.replit.app'; // Asegúrate de que esta URL sea correcta
-
   const apiKey = process.env.NEXT_PUBLIC_API_KEY || 'mi_API_key'; // Define NEXT_PUBLIC_API_KEY en tu entorno
 
   const handleSendMessage = async (messageContent: string) => {
@@ -73,7 +71,6 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
           'Ocurrió un error al procesar tu mensaje. Por favor, intenta de nuevo más tarde.',
       };
       setMessages((prev) => [...prev, errorMessage]);
-
     } finally {
       setIsTyping(false);
     }
@@ -85,8 +82,8 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
         fixed 
         bottom-5 
         right-5 
-        w-120 
-        h-[750px] 
+        w-[40vw] 
+        h-[60vh] 
         bg-gradient-to-b from-[#212121] to-[#121212] 
         rounded-lg 
         shadow-xl 
@@ -95,14 +92,18 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ onClose }) => {
         z-50 
         border 
         border-[#121212] 
-        sm:w-96 sm:h-[600px]
-        md:w-96 md:h-[600px]
-        lg:w-[25rem] lg:h-[700px]
-        xl:w-[25rem] xl:h-[800px]
-        xs:w-full xs:h-full xs:bottom-0 xs:right-0 xs:rounded-none
+        min-w-[300px] 
+        min-h-[400px] 
+        max-w-[500px] 
+        max-h-[80vh] 
+        sm:w-[80vw] sm:h-[70vh]
+        md:w-[60vw] md:h-[70vh]
+        lg:w-[40vw] lg:h-[80vh]
+        xl:w-[25vw] xl:h-[90vh]   {/* Ajustado para pantallas extra grandes */}
+        xs:w-full xs:h-screen xs:bottom-0 xs:right-0 xs:rounded-none   {/* Ocupa toda la pantalla en móvil */}
+        transition-all duration-300 ease-in-out
       "
     >
-
       {/* Botón de cerrar */}
       <button
         className="absolute top-2 right-2 text-gray-400 hover:text-gray-200"
