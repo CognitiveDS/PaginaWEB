@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		screens: {
+			'xs':'480',
+		},
+		
   		colors: {
   			'brand-bg': '#1f0437',
   			'brand-purple-light': '#b1aee4',
