@@ -7,29 +7,29 @@ const serviceItems = [
   {
     title: "Asistentes Virtuales de IA",
     description: "Asistentes 24/7 integrados en múltiples plataformas, con conocimiento personalizado de tu negocio.",
-    icon: "/images/virtual-assistant.svg"
+    icon: "/images/AI.webp"
   },
   {
     title: "Sistema Multiagentes de IA",
     description: "Equipo de IA colaborativo que resuelve problemas y desarrolla soluciones de forma autónoma.",
-    icon: "/images/multi-agent.svg"
+    icon: "/images/Agents.webp"
   },
   {
     title: "Marketing Digital Automatizado",
     description: "Campañas personalizadas y contenido visual único generado por IA para destacar tu marca.",
-    icon: "/images/digital-marketing.svg"
+    icon: "/images/Marketing.webp"
   },
   {
     title: "Análisis de Datos",
     description: "Insights valiosos sobre el comportamiento de tus clientes para decisiones estratégicas informadas.",
-    icon: "/images/data-analysis.svg"
+    icon: "/images/Analisis.webp"
   }
 ];
 
 const Services: React.FC = () => {
   return (
     <section id="servicios" className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-1">
         <motion.h2 
           className="text-4xl font-bold text-center text-brand-purple-light mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ const Services: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Image src={service.icon} alt={service.title} width={64} height={64} className="mb-4"/>
+              <Image src={service.icon} alt={service.title} width={500} height={600} className="mb-4"/>
               <h3 className="text-xl font-semibold text-brand-accent mb-2">{service.title}</h3>
               <p className="text-brand-purple-light">{service.description}</p>
             </motion.div>

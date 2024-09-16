@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Image src="/images/logo.png" alt="CognitiveDS Logo" width={40} height={40} />
-            <span className="text-xl md:text-2xl font-bold ml-2 text-brand-silver">CognitiveDS</span>
+            <span className="text-xl md:text-2xl font-bold ml-2 text-brand-silver">Cognitive Data Solutions</span>
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-6">
@@ -57,13 +57,6 @@ const Header: React.FC = () => {
             </ul>
           </nav>
           <div className="flex items-center space-x-4">
-            <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-2 rounded-full bg-brand-purple-dark dark:bg-brand-purple-light text-brand-purple-light dark:text-brand-purple-dark"
-              aria-label="Toggle dark mode"
-            >
-              {theme === 'dark' ? '🌞' : '🌙'}
-            </button>
             <div className="md:hidden">
               <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -96,17 +89,6 @@ const Header: React.FC = () => {
                     </Link>
                   </li>
                 ))}
-                <li>
-                  <a
-                    href="/red-de-afiliados"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block py-2 px-4 hover:bg-brand-light-purple rounded transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    RED DE AFILIADOS
-                  </a>
-                </li>
                 <li>
                   <a
                     href="/comunidad"

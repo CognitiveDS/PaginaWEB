@@ -1,5 +1,4 @@
 module.exports = {
-  darkMode: ['class', 'class'],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -8,10 +7,10 @@ module.exports = {
   	extend: {
   		colors: {
   			'brand-bg': '#1f0437',
-  			'brand-purple-light': '#b1aee3',
+  			'brand-purple-light': '#b1aee4',
   			'brand-purple': '#3a0781',
   			'brand-purple-dark': '#1f0437',
-  			'brand-accent': '#3206b8',
+  			'brand-accent': '#ffffff',
   			'brand-header': '#E0E0E0',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -55,11 +54,9 @@ module.exports = {
   			}
   		},
   		backgroundColor: {
-  			dark: '#121212',
   			light: '#ffffff'
   		},
   		textColor: {
-  			dark: '#ffffff',
   			light: '#000000'
   		},
   		fontFamily: {
