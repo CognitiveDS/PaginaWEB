@@ -5,14 +5,14 @@ import Link from 'next/link';
 
 const serviceItems = [
   {
-    title: "Asistentes Virtuales de IA",
-    description: "Asistentes 24/7 integrados en múltiples plataformas, con conocimiento personalizado de tu negocio.",
+    title: "Asistentes Virtuales de IA de texto",
+    description: "Asistentes de IA especializados en texto integrados en redes sociales y sitios web para respuestas rápidas y coherentes a las consultas de los usuarios 24/7.",
     icon: "/images/AI.webp"
   },
   {
-    title: "Sistema Multiagentes de IA",
-    description: "Equipo de IA colaborativo que resuelve problemas y desarrolla soluciones de forma autónoma.",
-    icon: "/images/Agents.webp"
+    title: "Asistentes Virtuales de IA de voz",
+    description: "Asistentes 24/7 integrados en números de teléfono para atender llamadas, con conocimiento personalizado de tu negocio.",
+    icon: "/images/Voice.webp"
   },
   {
     title: "Marketing Digital Automatizado",

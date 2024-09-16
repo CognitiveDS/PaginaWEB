@@ -50,11 +50,11 @@ const teamMembers = [
     name: "Rodrigo De La Torre Sánchez",
 
     role: "CEO y Director general CognitiveDS",
-    image: "/images/Rod1.png",
+    image: "/images/R.png",
     bio: "Lidera la agencia con más de 1 año de experiencia."
   },
   {
-    name: "Alex Seis Espinoza",
+    name: "Alex Seis Espinosa",
     role: "Desarrollador Principal",
 
     image: "/images/Alex.png",
