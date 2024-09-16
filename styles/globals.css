@@ -4,7 +4,6 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-
 html, body {
   overflow-x: hidden;
 }
@@ -65,6 +64,7 @@ button {
     @apply mb-8;
   }
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -120,18 +120,21 @@ button {
     --chart-5: 340 75% 55%;
   }
 }
+
 @layer base {
   * {
-    @apply border-border;
+    @apply border-[hsl(var(--border))];
   }
   body {
     @apply bg-background text-foreground;
   }
-
 }
 
 @layer utilities {
-  .shine-effect {
-    animation: shine 2s ease-in-out forwards;
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .rounded-full {
+    border-radius: 9999px;
   }
 }
