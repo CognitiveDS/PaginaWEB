@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const testimonials = [
   {
     name: "Jorge Aremko SPA",
     role: "Dueño Aremko SPA",
-
     image: "/images/LOGOAREMKO1.png",
     testimonial: "CognitiveDS transformó nuestra forma de analizar datos. Su equipo es excepcional."
   },
@@ -17,22 +15,22 @@ const testimonials = [
     image: "/images/Italia.png",
     testimonial: "Las soluciones de IA que nos proporcionaron han sido un cambio de juego para nuestro negocio."
   },
-  
+  // Puedes agregar más testimonios aquí
 ];
 
 const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000); // Cambia cada 5 segundos
 
-  const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
-  };
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section className="py-20">
+    <section id="testimonios" className="py-20 mt-20 scroll-mt-20"> {/* Añadido scroll-mt-20 */}
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-brand-purple-light mb-12">Testimonios</h2>
         <div className="relative max-w-4xl mx-auto">
@@ -63,20 +61,6 @@ const Testimonials: React.FC = () => {
               </div>
             </motion.div>
           </AnimatePresence>
-          <button
-            onClick={prevTestimonial}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-brand-accent text-white p-2 rounded-full"
-            aria-label="Testimonio anterior"
-          >
-            <FaChevronLeft />
-          </button>
-          <button
-            onClick={nextTestimonial}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-brand-accent text-white p-2 rounded-full"
-            aria-label="Siguiente testimonio"
-          >
-            <FaChevronRight />
-          </button>
         </div>
       </div>
     </section>

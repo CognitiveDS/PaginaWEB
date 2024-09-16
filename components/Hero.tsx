@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
               className="md:w-1/2"
               initial={{ opacity: 0, x: 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
             >
               <div className="relative w-full pb-[56.25%]"> {/* 16:9 Aspect Ratio */}
                 <YouTube
