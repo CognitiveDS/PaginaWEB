@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -40,9 +41,11 @@
     "@types/react-scroll": "^1.8.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.5",
     "lucide-react": "^0.441.0",
+    "node-scp": "^0.0.23",
     "postcss": "^8.4.41",
     "shadcn-ui": "^0.9.0",
     "tailwind-merge": "^2.5.2",

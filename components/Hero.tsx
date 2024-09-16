@@ -19,6 +19,18 @@ const Hero: React.FC = () => {
     },
   };
 
+  // Función para manejar el desplazamiento suave
+  const handleSmoothScroll = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    const contactSection = document.getElementById('contacto');
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <Parallax
       bgImage="/images/Fondo.webp"
@@ -58,7 +70,10 @@ const Hero: React.FC = () => {
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                <AnimatedButton className="bg-brand-accent text-brand-bg px-6 py-2 rounded-full hover:bg-brand-purple-light hover:text-brand-purple-dark transition duration-300 shadow-lg">
+                <AnimatedButton 
+                  className="bg-brand-accent text-brand-bg px-6 py-2 rounded-full hover:bg-brand-purple-light hover:text-brand-purple-dark transition duration-300 shadow-lg"
+                  onClick={handleSmoothScroll}
+                >
                   Agenda ahora
                 </AnimatedButton>
               </motion.div>

@@ -11,7 +11,7 @@ const serviceDetails = [
     image: "/images/ai-assistant-detailed.jpg"
   },
   {
-    title: "Sistema Multiagentes de IA",
+    title: "Asistentes de voz",
     description: "Un equipo de IA colaborativo que incluye roles como 'Director General', 'Especialista en Marketing', 'Desarrollador Principal' y 'Revisor'. Trabajan juntos para crear campañas, evaluar estrategias y desarrollar software de forma autónoma.",
     image: "/images/multi-agent-system.jpg"
   },
@@ -50,7 +50,7 @@ const ServiciosPage: React.FC = () => {
           {serviceDetails.map((service, index) => (
             <motion.div
               key={index}
-              className="mb-16 bg-brand-purple-dark p-8 rounded-lg shadow-lg"
+              className="mb-8 bg-brand-purple-dark p-8 rounded-lg shadow-lg"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
