@@ -20,8 +20,10 @@ const Hero: React.FC = () => {
   };
 
   // Función para manejar el desplazamiento suave
-  const handleSmoothScroll = (event: React.MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
+  const handleSmoothScroll = (event?: React.MouseEvent<HTMLButtonElement>) => {
+    if (event) {
+      event.preventDefault();
+    }
     const contactSection = document.getElementById('contacto');
     if (contactSection) {
       contactSection.scrollIntoView({

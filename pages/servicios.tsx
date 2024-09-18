@@ -3,27 +3,28 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
+import Link from 'next/link'; // Importar el componente Link
 
 const serviceDetails = [
   {
     title: "Asistentes Virtuales de Voz y Texto con Inteligencia Artificial",
-    description: "Nuestros asistentes de IA se integran a tu página web, redes sociales y teléfono móvil, ofreciendo atención 24/7 con conocimientos personalizados sobre tu negocio. Gestionan consultas, acceden a bases de datos y automatizan tareas repetitivas.",
-    image: "/images/ai-assistant-detailed.jpg"
+    description: "Nuestros asistentes de IA especializados en texto se integran fácilmente con redes sociales y sitios web para proporcionar respuestas rápidas y coherentes a las consultas de los usuarios. Estos asistentes están diseñados para ofrecer un soporte personalizado y eficiente, gestionando desde preguntas frecuentes hasta interacciones más complejas. Además, aprenden continuamente de las interacciones previas, optimizando la experiencia del usuario con cada respuesta. Simplifica la gestión de la comunicación digital de tu negocio mientras mantienes una presencia en línea activa y confiable.",
+    image: "/images/AI.webp"
   },
   {
     title: "Asistentes de voz",
-    description: "Un equipo de IA colaborativo que incluye roles como 'Director General', 'Especialista en Marketing', 'Desarrollador Principal' y 'Revisor'. Trabajan juntos para crear campañas, evaluar estrategias y desarrollar software de forma autónoma.",
-    image: "/images/multi-agent-system.jpg"
+    description: "Los asistentes de IA de voz están diseñados para gestionar de manera autónoma interacciones telefónicas, ofreciendo respuestas en tiempo real y brindando información precisa a los usuarios. Estos asistentes pueden automatizar tareas repetitivas, como la toma de citas, procesamiento de solicitudes o activación de servicios. Además, durante las llamadas, son capaces de segmentar clientes en función de sus respuestas y comportamientos, adaptando la conversación para proporcionar una experiencia más personalizada y eficiente. Con capacidades avanzadas de reconocimiento de voz y procesamiento del lenguaje natural, estos asistentes optimizan la comunicación empresarial, mejorando tanto la atención al cliente como los procesos internos.",
+    image: "/images/Voice.webp"
   },
   {
     title: "Servicio de Marketing Digital Automatizado",
-    description: "Creamos campañas efectivas y contenido personalizado, incluyendo imágenes únicas generadas por IA de tus productos en entornos creativos. Destacamos tu marca con originalidad e impacto visual.",
-    image: "/images/ai-marketing.jpg"
+    description: "Transforma tu marketing con campañas automatizadas impulsadas por IA, diseñadas para captar la atención de tu público objetivo de manera eficiente. Nuestro servicio incluye la creación de contenido visual personalizado, utilizando imágenes generadas por IA para reflejar la identidad única de tu marca. Desde la planificación estratégica hasta la ejecución de campañas, optimizamos cada paso del proceso para aumentar tu alcance y maximizar los resultados. Asegura una presencia visual impactante y constante sin esfuerzo manual.",
+    image: "/images/Marketing.webp"
   },
   {
     title: "Servicio de Análisis de Datos",
-    description: "Recopilamos y analizamos información valiosa sobre el comportamiento de tus clientes, permitiéndote tomar decisiones estratégicas basadas en datos reales. Optimiza tus campañas y anticípate a las demandas del mercado.",
-    image: "/images/data-analysis-detailed.jpg"
+    description: "Descubre el valor de la información detrás de cada interacción con tu cliente. Nuestro servicio de análisis de datos utiliza IA para segmentar, clasificar y extraer patrones clave de todas las conversaciones, proporcionando una visión profunda de las preferencias y comportamientos de tus clientes. Con este análisis, puedes tomar decisiones más informadas, ajustar estrategias comerciales y mejorar la satisfacción del cliente. Conoce mejor a tu audiencia y optimiza cada aspecto de tu negocio con datos en tiempo real.",
+    image: "/images/Analisis.webp"
   }
 ];
 
@@ -66,6 +67,13 @@ const ServiciosPage: React.FC = () => {
               </div>
             </motion.div>
           ))}
+
+          {/* Botón para volver a la sección de servicios */}
+          <div className="text-center mt-8">
+            <Link href="/" className="bg-brand-purple light hover:bg-brand-accent-dark text-white font-semibold py-2 px-6 rounded-lg shadow-lg">
+              Regresar a página principal
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>

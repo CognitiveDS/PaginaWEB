@@ -51,10 +51,11 @@ const teamMembers = [
 
     role: "CEO y Director general CognitiveDS",
     image: "/images/Rod1.webp",
+
     bio: "Lidera la agencia con más de 1 año de experiencia."
   },
   {
-    name: "Alex Seis Espinoza",
+    name: "Alex Seis Espinosa",
     role: "Desarrollador Principal",
 
     image: "/images/Alex.webp",
