@@ -4,6 +4,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
+  trailingSlash: true, // Añadido para asegurar las rutas en servidores estáticos
   images: {
     unoptimized: true,
   },
