@@ -43,21 +43,21 @@ const teamMembers = [
     name: "Jorge Daniel Carreón Guzmán",
     role: "CEO y Fundador de CognitiveDS",
 
-    image: "/images/Daniel1.png",
+    image: "/images/Daniel1.webp",
     bio: "Con más de 2 años de experiencia en IA y análisis de datos, Daniel lidera nuestra visión estratégica."
   },
   {
     name: "Rodrigo De La Torre Sánchez",
 
     role: "CEO y Director general CognitiveDS",
-    image: "/images/Rod1.png",
+    image: "/images/Rod1.webp",
     bio: "Lidera la agencia con más de 1 año de experiencia."
   },
   {
     name: "Alex Seis Espinoza",
     role: "Desarrollador Principal",
 
-    image: "/images/Alex.png",
+    image: "/images/Alex.webp",
     bio: "Especialista en desarrollo de GPT's y experto en implementaciónes con IA."
   },
 

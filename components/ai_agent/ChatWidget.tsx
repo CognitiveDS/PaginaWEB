@@ -1,5 +1,3 @@
-// components/ai_agent/ChatWidget.tsx
-
 import React, { useState } from 'react';
 import ChatBubble from './ChatBubble';
 import ChatContainer from './ChatContainer';
@@ -13,8 +11,8 @@ const ChatWidget: React.FC = () => {
 
   return (
     <>
-      <ChatBubble onClick={handleToggleChat} />
-      {isOpen && <ChatContainer onClose={handleToggleChat} />}
+      {!isOpen && <ChatBubble onClick={handleToggleChat} />}
+      <ChatContainer onClose={handleToggleChat} isOpen={isOpen} />
     </>
   );
 };

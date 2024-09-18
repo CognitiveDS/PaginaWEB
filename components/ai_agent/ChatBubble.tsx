@@ -21,13 +21,12 @@ const ChatBubble: React.FC<ChatBubbleProps> = ({ onClick }) => {
 
   return (
     <button
-      className={`fixed bottom-5 right-5 w-20 h-20 bg-[#121212] rounded-full flex items-center justify-center z-50 hover:bg-gray-800 transition-colors ${
-        isShining ? 'shine-effect' : ''
-      }`}
+      className={`fixed bottom-5 right-5 w-20 h-20 bg-[#121212] rounded-full flex items-center justify-center z-50 hover:bg-gray-800 transition-colors ${isShining ? 'shine-effect' : ''
+        }`}
       onClick={onClick}
     >
       <div className="relative">
-        <img src="/images/ai-bot-icon.png" alt="Chat" className="w-16 h-16" />
+        <img src="/images/ai-bot-icon.webp" alt="Chat" className="w-16 h-16" />
         {isShining && (
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 animate-shine rounded-full"></div>
         )}

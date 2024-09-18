@@ -6,13 +6,13 @@ const testimonials = [
   {
     name: "Jorge Aremko SPA",
     role: "Dueño Aremko SPA",
-    image: "/images/LOGOAREMKO1.png",
+    image: "/images/LOGOAREMKO1.webp",
     testimonial: "CognitiveDS transformó nuestra forma de analizar datos. Su equipo es excepcional."
   },
   {
     name: "Gestionista Italia",
     role: "Dueño de Gestionista Italia",
-    image: "/images/Italia.png",
+    image: "/images/Italia.webp",
     testimonial: "Las soluciones de IA que nos proporcionaron han sido un cambio de juego para nuestro negocio."
   },
   // Puedes agregar más testimonios aquí

@@ -15,9 +15,8 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const headerClass = `fixed w-full z-10 transition-all duration-300 ${
-    isScrolled ? 'bg-brand-purple-dark py-2' : 'bg-brand-purple py-4'
-  }`;
+  const headerClass = `fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-brand-purple-dark py-2' : 'bg-brand-purple py-4'
+    }`;
 
   const navItems = [
     { name: 'INICIO', id: 'inicio' },
@@ -32,7 +31,7 @@ const Header: React.FC = () => {
     if (element) {
       const yOffset = -80;
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({top: y, behavior: 'smooth'});
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
@@ -40,7 +39,7 @@ const Header: React.FC = () => {
     <header className={headerClass}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/images/logo.png" alt="CognitiveDS Logo" width={40} height={40} />
+          <Image src="/images/logo.webp" alt="CognitiveDS Logo" width={40} height={40} />
           <span className="text-xl md:text-2xl font-bold ml-2 text-brand-silver">Cognitive Data Solutions</span>
         </div>
         <nav className="hidden md:block">
@@ -74,7 +73,7 @@ const Header: React.FC = () => {
       </div>
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.nav 
+          <motion.nav
             className="md:hidden mt-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
