@@ -15,7 +15,7 @@ module.exports = {
 				'brand-purple-light': '#b1aee3',
 				'brand-purple': '#3a0781',
 				'brand-purple-dark': '#1f0437',
-				'brand-accent': '#3206b8',
+				'brand-accent': '#ffffff',
 				'brand-header': '#212121',
 				'brand-dark': '#212121',
 				'brand-light': '#ffffff',
