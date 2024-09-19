@@ -39,11 +39,11 @@ const Hero: React.FC = () => {
       strength={250}
       bgImageStyle={{opacity: '0.2'}}
     >
-      <section ref={ref} id="inicio" className="py-20 md:py-40 overflow-hidden">
-        <div className="container mx-auto px-1">
+      <section ref={ref} id="inicio" className="pt-24 md:pt-20 md:py-40 overflow-hidden">
+        <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <motion.div 
-              className="md:w-1/2 mb-8 md:mb-0"
+              className="w-full md:w-1/2 mb-8 md:mb-0"
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
@@ -81,10 +81,10 @@ const Hero: React.FC = () => {
               </motion.div>
             </motion.div>
             <motion.div 
-              className="md:w-1/2"
+              className="w-full md:w-1/2"
               initial={{ opacity: 0, x: 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-              transition={{ duration: 0.5, delay: 1.0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
             >
               <div className="relative w-full pb-[56.25%]"> {/* 16:9 Aspect Ratio */}
                 <YouTube

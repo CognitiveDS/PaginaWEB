@@ -15,8 +15,9 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const headerClass = `fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-brand-purple-dark py-2' : 'bg-brand-purple py-4'
-    }`;
+  const headerClass = `fixed w-full z-10 transition-all duration-300 ${
+    isScrolled ? 'bg-brand-purple-dark py-2' : 'bg-brand-purple py-2 md:py-4'
+  }`;
 
   const navItems = [
     { name: 'INICIO', id: 'inicio' },
