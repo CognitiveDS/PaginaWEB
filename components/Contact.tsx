@@ -28,8 +28,9 @@ const Contact: React.FC = () => {
             calLink="levy-ai/meeting"
             style={{
               width: "100%",
-              height: "700px",
-              overflow: "hidden"
+              height: "100%",
+              minHeight: "600px",
+              overflow: "auto"
             }}
             config={{
               layout: 'month_view',
@@ -40,17 +41,18 @@ const Contact: React.FC = () => {
       </div>
       <style jsx global>{`
         @media (max-width: 768px) {
-          /* Estilos para móviles */
           [data-cal-namespace] .Cal__Embedded {
             width: 100% !important;
-            height: 600px !important;
+            height: auto !important;
+            min-height: 600px !important;
+            max-height: 80vh !important;
+            overflow-y: auto !important;
           }
         }
         @media (min-width: 769px) {
-          /* Estilos para PC */
           [data-cal-namespace] .Cal__Embedded {
             width: 100% !important;
-            min-height: 700px !important;
+            height: 700px !important;
           }
         }
       `}</style>
